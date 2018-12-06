@@ -8,6 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
@@ -32,6 +33,7 @@ class Ui_Dialog(object):
         self.pushButton.clicked.connect(Dialog.Umu)
         self.pushButton_2.clicked.connect(Dialog.Playmu)
         self.pushButton_3.clicked.connect(Dialog.Dmu)
+        # self.label.setText(Dialog.text)
         #self.queryBtn.clicked.connect(Form.queryWeather)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
@@ -40,7 +42,7 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.label.setText(_translate("Dialog", "播放列表"))
         self.pushButton.setText(_translate("Dialog", "上一首"))
-        self.pushButton_2.setText(_translate("Dialog", "播放"))
+        self.pushButton_2.setText(_translate("Dialog", "播放/停止"))
         self.pushButton_3.setText(_translate("Dialog", "下一首"))
 
 
